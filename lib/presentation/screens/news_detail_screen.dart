@@ -115,7 +115,7 @@ class NewsDetailScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Text(
-                    news.source.name.isNotEmpty ? news.source.name : 'Unknown',
+                   news.source.name?.isNotEmpty == true ? news.source.name! : 'Unknown',
                     style: TextStyle(
                       color: Colors.blue[800],
                       fontWeight: FontWeight.w500,
@@ -181,10 +181,15 @@ class NewsDetailScreen extends StatelessWidget {
   }
 
   Future<void> _launchURL(String url) async {
-    if (await canLaunchUrl(Uri.parse(url))) {
-      await launchUrl(Uri.parse(url));
-    } else {
-      throw 'Could not launch $url';
-    }
+  final uri = Uri.parse(url);
+
+  if (await canLaunchUrl(uri)) {
+    await launchUrl(
+      uri,
+      mode: LaunchMode.externalApplication, // WAJIB!
+    );
+  } else {
+    debugPrint('Could not launch $url');
   }
+}
 }

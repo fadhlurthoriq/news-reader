@@ -33,11 +33,11 @@ class NewsModel {
 @JsonSerializable()
 class SourceModel {
   final String? id;
-  final String name;
+  final String? name;
 
   SourceModel({
     this.id,
-    required this.name,
+    this.name,
   });
 
   factory SourceModel.fromJson(Map<String, dynamic> json) =>

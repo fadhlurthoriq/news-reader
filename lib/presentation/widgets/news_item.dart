@@ -95,7 +95,7 @@ class NewsItem extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          news.source.name,
+                          news.source.name?.isNotEmpty == true ? news.source.name! : 'Unknown',
                           style: TextStyle(
                             fontSize: 12,
                             color: Colors.grey[600],
