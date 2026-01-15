@@ -1,3 +1,4 @@
+/// Halaman utama untuk menampilkan daftar berita.
 import 'package:flutter/material.dart';
 import 'package:news_reader/presentation/screens/bookmark_screens.dart';
 import 'package:provider/provider.dart';
@@ -6,7 +7,14 @@ import 'package:news_reader/presentation/widgets/news_item.dart';
 import 'package:news_reader/presentation/screens/news_detail_screen.dart';
 import 'package:news_reader/core/constants/api_constants.dart';
 
+/// Screen ini menampilkan:
+/// - Search bar
+/// - Kategori berita
+/// - Daftar berita
+/// - Navigasi ke detail dan bookmark
 class NewsListScreen extends StatefulWidget {
+
+  /// Constructor NewsListScreen
   const NewsListScreen({super.key});
 
   @override
@@ -14,8 +22,13 @@ class NewsListScreen extends StatefulWidget {
 }
 
 class _NewsListScreenState extends State<NewsListScreen> {
+
+  /// Controller untuk input pencarian
   final TextEditingController _searchController = TextEditingController();
 
+  /// Dipanggil saat widget pertama kali dibuat.
+  ///
+  /// Method ini akan memuat berita utama setelah UI siap.
   @override
   void initState() {
     super.initState();
@@ -24,6 +37,7 @@ class _NewsListScreenState extends State<NewsListScreen> {
     });
   }
 
+  /// Membangun tampilan utama halaman berita.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,6 +98,9 @@ class _NewsListScreenState extends State<NewsListScreen> {
     );
   }
 
+  /// Widget untuk menampilkan pilihan kategori berita.
+  ///
+  /// Menggunakan FilterChip untuk memilih kategori.
   Widget _buildCategoryChips() {
     final categories = AppConstants.categories;
     
@@ -125,6 +142,13 @@ class _NewsListScreenState extends State<NewsListScreen> {
     );
   }
 
+   /// Widget untuk menampilkan daftar berita.
+  ///
+  /// Menangani kondisi:
+  /// - Loading
+  /// - Error
+  /// - Data kosong
+  /// - Data berhasil ditampilkan
   Widget _buildNewsList() {
     return Consumer<NewsProvider>(
       builder: (context, newsProvider, child) {
@@ -204,6 +228,7 @@ class _NewsListScreenState extends State<NewsListScreen> {
     );
   }
 
+  /// Membersihkan resource saat widget dihapus.
   @override
   void dispose() {
     _searchController.dispose();
