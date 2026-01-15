@@ -2,7 +2,7 @@ class ApiConstants {
   // Base URL NewsAPI.org
   static const String baseUrl = "https://newsapi.org/v2";
 
-  // MASUKKAN API KEY NEWSAPI KAMU DI SINI
+  // API KEY NEWSAPI
   static const String apiKey = "42e8c3c6922b494780132ca5b9bb7144";
 
   // Default queries
