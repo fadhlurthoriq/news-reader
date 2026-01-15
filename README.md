@@ -59,15 +59,15 @@ Berikut adalah beberapa tampilan utama dari aplikasi News Reader:
 
 lib/
 ├── main.dart
-├── core/               # Konstanta dan Exceptions applikasi
+├── core/
 │   ├── constants/
 │   └── exceptions/
-├── data/               # Pengambilan dan pemodelan data dari API
+├── data/
 │   ├── datasources/
 │   └── models/
-├── domain/             # Repository sebagai penghubung data dan UI
+├── domain/
 │   └── repositories/
-├── presentation/       # UI, Provider, dan widget aplikasi
+├── presentation/
 │   ├── providers/
 │   ├── screens/
 │   └── widgets/
