@@ -48,7 +48,7 @@ Pastikan perangkat kamu sudah memenuhi syarat berikut:
 
 ## 📸 Screenshots
 Berikut adalah beberapa tampilan utama dari aplikasi News Reader:
-![Halaman Berita Utama](screenshots/2.jpg)
+![Halaman Berita Utama](<img src="screenshots/2.jpg" width="250"/>)
 ![Halaman Detail Berita](screenshots/3.jpg)
 ![Halaman Bookmark](screenshots/4.jpg)
 ![Halaman Jika Search Berita](screenshots/1.jpg)
@@ -57,17 +57,18 @@ Berikut adalah beberapa tampilan utama dari aplikasi News Reader:
 
 ## 🗂️ Struktur Folder
 
+```text
 lib/
 ├── main.dart
-├── core/
+├── core/               # Konstanta dan Exceptions applikasi
 │   ├── constants/
 │   └── exceptions/
-├── data/
+├── data/               # Pengambilan dan pemodelan data dari API
 │   ├── datasources/
 │   └── models/
-├── domain/
+├── domain/             # Repository sebagai penghubung data dan UI
 │   └── repositories/
-├── presentation/
+├── presentation/       # UI, Provider, dan widget aplikasi
 │   ├── providers/
 │   ├── screens/
 │   └── widgets/
