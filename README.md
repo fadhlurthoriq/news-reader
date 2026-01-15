@@ -48,10 +48,28 @@ Pastikan perangkat kamu sudah memenuhi syarat berikut:
 
 ## 📸 Screenshots
 Berikut adalah beberapa tampilan utama dari aplikasi News Reader:
-![Halaman Berita Utama] <img src="screenshots/2.jpg" width="250"/>
-![Halaman Detail Berita](screenshots/3.jpg)
-![Halaman Bookmark](screenshots/4.jpg)
-![Halaman Jika Search Berita](screenshots/1.jpg)
+<p align="center"><b>Tampilan Aplikasi</b></p>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="screenshots/2.jpg" width="220"/><br/>
+      <b>Halaman Utama</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/3.jpg" width="220"/><br/>
+      <b>Detail Berita</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/4.jpg" width="220"/><br/>
+      <b>Bookmark</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/1.jpg" width="220"/><br/>
+      <b>Pencarian Berita</b>
+    </td>
+  </tr>
+</table>
 
 ---
 
