@@ -31,7 +31,7 @@ Pastikan perangkat kamu sudah memenuhi syarat berikut:
 ### Langkah-langkah Instalasi
 1. Clone repository proyek:
    ```bash
-   git clone [url-repo-anda]
+   git clone [https://github.com/fadhlurthoriq/news-reader]
 2. Masuk ke directory proyek:
    ```bash
    cd news_reader
