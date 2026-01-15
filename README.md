@@ -48,7 +48,7 @@ Pastikan perangkat kamu sudah memenuhi syarat berikut:
 
 ## 📸 Screenshots
 Berikut adalah beberapa tampilan utama dari aplikasi News Reader:
-![Halaman Berita Utama](<img src="screenshots/2.jpg" width="250"/>)
+![Halaman Berita Utama] <img src="screenshots/2.jpg" width="250"/>
 ![Halaman Detail Berita](screenshots/3.jpg)
 ![Halaman Bookmark](screenshots/4.jpg)
 ![Halaman Jika Search Berita](screenshots/1.jpg)
@@ -72,7 +72,7 @@ lib/
 │   ├── providers/
 │   ├── screens/
 │   └── widgets/
-
+```
 ---
 
 ## 🤝 Panduan Kontribusi (Contribution Guidelines)
